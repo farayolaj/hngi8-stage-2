@@ -1,7 +1,7 @@
 {
-  "name": "hng-portfolio",
+  "name": "hng-resume",
   "version": "1.0.0",
-  "description": "Portfolio for HNGi8 Stage 2 Task",
+  "description": "Resume for HNGi8 Stage 2 Task",
   "main": "index.js",
   "repository": "https://github.com/farayolaj/hng-portfolio",
   "author": "Joshua Farayola",
