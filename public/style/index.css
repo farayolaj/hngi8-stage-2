@@ -1,0 +1,128 @@
+body {
+  padding: 2rem 8rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section > h2::after {
+  content: '';
+  display: block;
+  width: 15rem;
+  border: 1px solid black;
+}
+
+#address {
+  margin-top: 2rem;
+}
+
+#contacts {
+  display: flex;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0px;
+  gap: 2rem;
+  padding: 2px 0.5rem;
+  margin-top: 0.2rem;
+}
+
+#about {
+  line-height: 1.5;
+  padding: 2rem 5rem 0px;
+}
+
+.skill-table {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  gap: 0.5rem;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 28rem;
+}
+
+.work .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.work .stack {
+  font-style: italic;
+}
+
+.work .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .description {
+  margin-top: 0.2rem;
+}
+
+.schools {
+  display: grid;
+  gap: 1rem;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+}
+
+.form-input input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.form-input input {
+  width: 15rem;
+}
+
+.form-input textarea {
+  width: 20rem;
+}
+
+.contact-form button[type='submit'] {
+  width: fit-content;
+  padding: 0.3rem;
+  justify-self: center;
+}
+
+#logos {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+#logos img {
+  width: auto;
+}

@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "exec": "ts-node src/index.ts",
+  "watch": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.json"
+  ],
+  "ext": "js, ts, json"
+}
