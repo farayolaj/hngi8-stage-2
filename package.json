@@ -2,10 +2,13 @@
   "name": "hng-resume",
   "version": "1.0.0",
   "description": "Resume for HNGi8 Stage 2 Task",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "https://github.com/farayolaj/hng-portfolio",
   "author": "Joshua Farayola",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "NODE_OPTIONS='--tls-min-v1.0' nodemon",
     "build": "tsc",
