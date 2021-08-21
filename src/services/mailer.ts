@@ -31,23 +31,30 @@ export default class Mailer {
   async notifyMe(name: string, from: string, subject: string, message: string) {
     await this.sendMail({
       to: config.receiveAddress,
+      replyTo: `${name} <${from}>`,
       subject,
-      message: `From ${name}, ${from}:\n${message}`,
+      message,
     });
   }
 
   async sendMail({
     to,
     subject,
+    replyTo,
     message,
+    from,
   }: {
     to: string;
     subject: string;
+    replyTo?: string;
+    from?: string;
     message: string;
   }) {
     try {
       await this.transport.sendMail({
         to,
+        replyTo,
+        from: from || `${config.senderName} <${config.receiveAddress}>`,
         subject,
         text: message,
       });
