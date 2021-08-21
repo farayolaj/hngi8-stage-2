@@ -10,10 +10,9 @@
     "node": "14.x"
   },
   "scripts": {
-    "dev": "NODE_OPTIONS='--tls-min-v1.0' nodemon",
+    "dev": "nodemon",
     "build": "tsc",
-    "postinstall": "yarn build",
-    "start": "node --tls-min-v1.0 build/index.js"
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
