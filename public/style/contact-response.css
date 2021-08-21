@@ -7,13 +7,22 @@ body {
 }
 
 body > div {
-  background-color: rgb(206, 233, 206);
   width: 50vw;
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   text-align: center;
   font-size: x-large;
   padding: 0px 1rem;
+}
+
+.success {
+  background-color: rgb(206, 233, 206);
+}
+
+.failure {
+  background-color: rgb(233, 206, 206);
 }

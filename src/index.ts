@@ -22,6 +22,11 @@ Mailer.getMailer();
 
 app.post('/contact', (req, res) => {
   const { name, email, subject, message } = req.body;
+
+  if (!name || !email || !subject || !message) {
+    return res.render('contact-failure');
+  }
+
   console.log(`Mail from ${name}:`);
   console.log(subject);
   console.log(message);
