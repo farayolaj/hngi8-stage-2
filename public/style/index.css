@@ -77,7 +77,6 @@ section > h2::after {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  height: 6.5rem;
 }
 
 .work .title {
@@ -131,7 +130,7 @@ textarea {
 }
 
 .form-input textarea {
-  width: 20rem;
+  width: 17rem;
 }
 
 .contact-form button[type='submit'] {
@@ -181,5 +180,9 @@ textarea {
   #logos {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .form-input textarea {
+    width: 20rem;
   }
 }
